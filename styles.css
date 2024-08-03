@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+ body {
+     background: linear-gradient(to bottom, #00bcd4, #cfeff9);
+     color: #333;
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+ }
+
+header {
+   margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#connect-wallet {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #00708b;
+    color: #ffffff;
+    padding: 6px 12px;
+    margin: 5px 50px 5px 5px;
+    border-radius: 50px;
+    cursor: pointer;  
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+   
+}
+.staking-section,
+.rewards-section,
+.how-it-works-section {
+    margin-bottom: 40px;
+}
+
+.container {
+    background-color: #006994;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color:#006994;
+    text-align: center;
+}
+
+.total-staked {
+    background-color: #02475e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto 10px;
+}
+
+.total-staked h2 {
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: rgb(99, 208, 230);    
+}
+
+.total-staked p {
+    font-size: 30px;
+    margin: 0;
+}
+
+.stake-unstake {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #02475e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.stake-puff,
+.unstake-info {
+    background-color: #02475e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    text-align: left;
+}
+
+.stake-puff h3,
+.unstake-info label {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.stake-input label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #0097a7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group .icon {
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+button {
+    background-color: #00c8d6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stake-puff button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.important-info {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #e0f7fa;
+}
+
+.unstake-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.unstake-header button {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.unstake-info .unstake-display {
+    background-color: #0097a7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.unstake-info .unstake-display span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e0f7fa;
+}
+
+.unstake-info p {
+    font-size: 12px;
+    color: #e0f7fa;
+}
+
+.unstake-info a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+.rewards-section {
+    background-color: #02475e;
+    padding: 30px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.rewards-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.rewards-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.rewards-table th{
+padding: 10px;
+    text-align:justify;
+}
+
+.rewards-table td {
+    padding: 10px;
+    text-align: justify;
+}
+
+/* .rewards-table th {
+    background-color: #00708b;
+} */
+
+.rewards-table tr {
+    border-bottom: 1px solid #dddddd7c;
+}
+
+.rewards-table .title-content {
+    display: flex;
+    align-items: center;
+}
+
+.rewards-table .title-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    
+}
+
+.rewards-table .title-content div {
+    display: flex;
+    flex-direction: column;
+}
+
+.rewards-table .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: semi-bold;
+    text-align: center;
+}
+
+.rewards-table .coming-soon {
+    background-color: #3ce39d;
+    color: #02475e;
+}
+
+.rewards-table .completed {
+    background-color: #0097a7;
+}
+
+.how-it-works-section {
+    background-color: #02475e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.718);
+    margin-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+
+.how-it-works-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.how-it-works-step {
+    background-color: #00708b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.step-number {
+    background-color: #0097a7;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+
+.step-description {
+    font-size: 14px;
+    color: #e0f7fa;
+}
+
+
+.image-section {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #004d70;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: none;
+    width: 450px;
+    max-width: 90%;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.popup-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.popup-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-body {
+    text-align: left;
+}
+
+.amount-section {
+    background: #005e85;
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.amount-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+.staked-amount {
+    display: flex;
+    align-items: center;
+ 
+    background: #004b6b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.staked-amount img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.staked-amount span {
+    font-size: 14px;
+    
+   
+}
+
+.staked-amount .amount {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 100px;
+   
+}
+
+.unstake {
+    width: 100%;
+    background: #00aaff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.important-info {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #b8b8b8;
+}
+
+.popiing {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #2f2f2f7c;
+}
+.unstaking-progress {
+    margin-top: 10px;
+
+}
+
+.progress-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: #005e85;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.progress-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.progress-item span {
+    font-size: 12px;
+    padding: 0px 55px 0px 0px;
+}
+
+.cancel,
+.claim {
+    background: #00aaff;
+    padding: 2px 8px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+#overlay.active,
+#popup.active {
+    display: block;
+}
